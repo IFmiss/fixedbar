@@ -1,0 +1,206 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/fixedbar.scss */
+.cpt_fixBar {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 40px;
+  width: 40px;
+  height: 140px;
+  background: transparent;
+  z-index: 1;
+}
+/* line 25, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+}
+/* line 31, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  color: #666;
+  background: rgba(144, 144, 144, 0.6);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 43, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li .div-showimage {
+  display: none;
+  position: absolute;
+  right: 160px;
+  -moz-box-shadow: 0 0 10px #666;
+  -webkit-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  top: 5px;
+}
+/* line 50, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li .div-showimage img {
+  width: 120px;
+  position: absolute;
+}
+/* line 56, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: #666;
+  text-decoration: none;
+}
+/* line 66, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li a:hover {
+  text-decoration: none;
+}
+/* line 71, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li:hover {
+  background: rgba(144, 144, 144, 0.8);
+}
+/* line 75, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li i {
+  font-size: 24px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 80, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li:hover i {
+  color: #eee;
+}
+/* line 84, ../sass/fixedbar.scss */
+.cpt_fixBar .listTool li:hover .div-showimage {
+  display: block;
+}
+
+/* line 93, ../sass/fixedbar.scss */
+.cpt_fixBar.blue .listTool li {
+  border: 1px solid #8FCBE4;
+  background: #fff;
+}
+/* line 97, ../sass/fixedbar.scss */
+.cpt_fixBar.blue .listTool li .div-showimage {
+  -moz-box-shadow: 0 0 10px #B0D1E9;
+  -webkit-box-shadow: 0 0 10px #B0D1E9;
+  box-shadow: 0 0 10px #B0D1E9;
+}
+/* line 101, ../sass/fixedbar.scss */
+.cpt_fixBar.blue .listTool li:hover {
+  background: #fff;
+}
+/* line 104, ../sass/fixedbar.scss */
+.cpt_fixBar.blue .listTool li:hover i {
+  color: #63B4E8;
+}
+/* line 109, ../sass/fixedbar.scss */
+.cpt_fixBar.blue .listTool li i {
+  color: #99CCCC;
+}
+
+/* line 118, ../sass/fixedbar.scss */
+.cpt_fixBar.green .listTool li {
+  border: 1px solid #8FE4BC;
+  background: #fff;
+}
+/* line 122, ../sass/fixedbar.scss */
+.cpt_fixBar.green .listTool li .div-showimage {
+  -moz-box-shadow: 0 0 10px #70D39A;
+  -webkit-box-shadow: 0 0 10px #70D39A;
+  box-shadow: 0 0 10px #70D39A;
+}
+/* line 126, ../sass/fixedbar.scss */
+.cpt_fixBar.green .listTool li:hover {
+  background: #fff;
+}
+/* line 129, ../sass/fixedbar.scss */
+.cpt_fixBar.green .listTool li:hover i {
+  color: #33CC99;
+}
+/* line 134, ../sass/fixedbar.scss */
+.cpt_fixBar.green .listTool li i {
+  color: #99CCCC;
+}

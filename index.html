@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="fonts/fontCss.css">
+	<link rel="stylesheet" href="css/fixedbar.css">
+</head>
+<body style="height: 2000px;">
+	 
+</body>
+<script src="http://www.daiwei.org/global/js/jquery.js"></script>
+<script src="js/fixedbar.js"></script>
+<script>
+	$('body').fixedbar({
+		type:'blue'
+	},function(ret){
+		alert(ret.index+';'+JSON.stringify(ret.value));
+	});
+</script>
+</html>
