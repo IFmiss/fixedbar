@@ -1,14 +1,13 @@
 (function($){
 	//显示固定的右下角菜单
 	$.fn.fixedbar = function(options,callBack){
+	    var _this = this;
+	    var $this = $(this);
 	    return this.each(function(){
-	    	var $this = $(this);
 			if($this.find('#cpt_fixBar').length){
 		      return;
 		    }
 
-		    var _this = this;
-		    var $this = $(this);
 		    var btnIndex;
 		    var defualtValue = {
 		    	type: 				'',   	//green ,
